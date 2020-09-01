@@ -9,9 +9,7 @@ int main() {
 	int ast_count = 0;
 	int in_header = 0;
 	int escaped = 0;
-	while(1) {
-		chr = getchar();
-		if(chr == EOF) break;
+	while((chr = getchar()) != EOF) {
 		if(escaped) {
 			putchar(chr);
 			escaped = 0;
@@ -88,4 +86,3 @@ int main() {
 		}
 	}
 }
-
