@@ -3,6 +3,6 @@ compile:
 clean:
 	rm mmd
 install:
-	cp mmd /usr/bin
+	mv mmd /usr/bin
 uninstall:
 	rm /usr/bin/mmd 
