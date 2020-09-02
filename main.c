@@ -44,13 +44,14 @@ int main() {
 					printf(BOLD);
 					break;
 				}
-				else if(ast_count == 1) {
-					ast_count--;
-					printf(RESET);
+				else if(ast_count == 2 && in_ast) {
+					ast_count++;
+					printf(ITALIC); // Text is already bold
 					break;
 				}
-				else if(ast_count == 2) {
+				else {
 					ast_count--;
+					if(ast_count == 0) printf(RESET);
 					break;
 				}
 			case '[':
